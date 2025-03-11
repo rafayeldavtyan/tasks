@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@shared/*": ["shared/*"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts*"],
+      "@ui/*": ["shared/ui/*"],
+      "@store/*": ["store/*"],
+    }
+  },
+  "include": [
+    "src",
+    "src/declaration.d.ts"
+  ]
+}
